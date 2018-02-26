@@ -1,0 +1,1 @@
+A simple CLI for fast development of front end

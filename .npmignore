@@ -1,0 +1,8 @@
+examples
+docs
+.DS_Store
+**/node_modules
+**/build
+**/src
+/assert
+**/test
