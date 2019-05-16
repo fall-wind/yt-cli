@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.14.1",
-    "inquirer": "^5.1.0"
+    "commander": "^2.20.0",
+    "inquirer": "^6.3.1"
   }
 }
