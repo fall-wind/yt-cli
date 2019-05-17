@@ -1,0 +1,33 @@
+.layout-container
+    min-height: 30px
+    margin-bottom: 16px
+    display: flex
+    position: relative
+    .label-wrapper
+        text-align: right
+        min-height: 30px
+        line-height: 30px
+        display: inline-block
+        flex: 0 0 100px
+        margin-right: 10px
+        white-space: pre
+    .content-wrapper
+        min-height: 30px
+        line-height: 30px
+        display: inline-block
+    .warning-msg
+        position absolute
+        color: red
+        font-size: 12px
+        height: 12px
+        line-height: 12px
+        bottom: -14px
+.has-warn
+    input
+        border-color: #f5222d
+        &:focus
+            box-shadow: 0
+            border-color: #f5222d
+        &:hover
+            box-shadow: 0
+            border-color: #f5222d

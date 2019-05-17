@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    // "module": "commonjs",
+    "module": "ESNext",
+    "target": "es6",
+    "jsx": "react",
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
+    // "moduleResolution": "node",
+    "types": ["node"],
+    "paths": {
+      "hoc/*": ["./src/hoc/*"],
+      "stores/*": ["./src/stores/*"],
+      "components/*": ["./src/components/*"],
+      "img": ["./src/images"],
+      "utils/*": ["./src/utils/*"],
+      "constants/*": ["./src/constants/*"],
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
+}

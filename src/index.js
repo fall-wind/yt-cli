@@ -35,7 +35,11 @@ program.command('init <type> <name>').action(async function cb(type, name) {
             cssName: usedCssName,
             dirName: name,
 		});
-	}
+	} else if (type === 'project') {
+        utils.projectInit({
+            projectName: name,
+        })
+    }
 });
 
 program.parse(process.argv);

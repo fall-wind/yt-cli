@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var child_process = require('child_process');
 
 function pageHandler(data, name) {
 	return data.replace(/\$\{Page\}/g, name);
@@ -125,9 +126,22 @@ function travel(dir, callback, finish) {
 	});
 }
 
+
+
+function copyDir(src, dist) {
+  child_process.spawn('cp', ['-r', src, dist]);	
+}
+
+function projectInit({ projectName }) {
+    var targetDir = path.join(process.cwd(), projectName);
+    var sourceDir = path.join(__dirname, '../tmp/project')
+    copyDir(sourceDir, targetDir)
+}
+
 module.exports = {
 	copyFile,
 	pageInit,
-	compInit,
+    compInit,
+    projectInit,
 	travel,
 };
