@@ -5,7 +5,7 @@ interface IProps {
 
 }
 
-const ${Component}: IProps = (props) => {
+const ${Component}: React.FC = (props) => {
     return (
         <div className="${Component}-wrapper">{props.children}</div>
     )
